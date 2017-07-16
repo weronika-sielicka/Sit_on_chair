@@ -5,66 +5,92 @@
   <meta charset="UTF-8">
   <title>SIT ON CHAIR</title>
   <link rel="stylesheet" href="/home/weronika/Pulpit/projekt/Sit_on_chair/css/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800&amp;subset=latin-ext" rel="stylesheet">
 </head>
 
 <body>
 
   <header>
     <div class="wrapper">
-      <p id="logo">
-        SIT ON CHAIR
-      </p>
-      <nav id="header_nav">
-        <ul>
-          <li>O FIRMIE</li>
-          <li>GALERIA</li>
-          <li>KONTAKT</li>
-        </ul>
-      </nav>
+      <div id="header_container">
+        <span id="logo">
+        SIT <span id="logo_ON">ON</span> CHAIR
+        </span>
+        <nav id="header_nav">
+          <ul>
+            <li>O FIRMIE</li>
+            <li>GALERIA</li>
+            <li>KONTAKT</li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
 
   <section id="section1">
     <div class="wrapper">
-      <nav id="section1_nav">
-        <ul>
-          <li>Aktualności</li>
-          <li>Nasz team</li>
-          <li>Historia</li>
-        </ul>
-      </nav>
+      <div id="section1_box">
+        <div id="section1_box_triangle"></div>
+        <nav id="section1_nav">
+          <ul>
+            <li>Aktualności</li>
+            <li>Nasz team</li>
+            <li>Historia</li>
+          </ul>
+        </nav>
+      </div>
       <div>
   </section>
 
   <section id="section2">
     <div class="wrapper">
-      <div id="section2_pic">
-        <img src="./images/black_chair.png">
-      </div>
-      <article id="section2_art">
-        <h1>SIT ON OUR CHAIR</h1>
-        <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesudada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.</p>
-        <div id="section2_button">
-          <span>ZOBACZ WIĘCEJ</span>
+
+        <div id="section2_arrow_left">
+          <p>&#60;</p>
         </div>
-      </article>
+
+        <div id="section2_box">
+
+        <div id="section2_pic">
+          <img src="./images/black_chair.png">
+        </div>
+
+        <article id="section2_art">
+          <span id="section2_art_title">SIT <span id="section2_green">ON</span> OUR <span id="section2_green">CHAIR</span></span>
+          <p id="section2_main_text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesudada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.</p>
+          <div id="section2_button">
+            <span>ZOBACZ WIĘCEJ</span>
+          </div>
+        </article>
+
+
+        <div id="section2_arrow_right">
+          <p>&#62;</p>
+        </div>
     </div>
   </section>
 
   <section id="section3">
     <div class="wrapper">
-      <article class="section3_box">
-        <img id="section3_box_pic1" src="./images/box1_img.jpg">
+
+<div id="section3_boxes">
+      <article id="section3_box_1">
+      <div id="section3_box_1_title"><p>Chair CLAIR</p></div>
       </article>
-      <article class="section3_box">
-        <img id="section3_box_pic2" src="./images/box2_img.jpg">
+
+
+      <article id="section3_box_2">
+        <div id="section3_box_2_title"><p>Chair MARGARITA</p><div>
+        </div>
       </article>
-      <article class="section3_box">
-        <h2>Finds all inputs</h2>
-        <p>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked. </br>
-          Notice there is no change when clicking the checkboxes since no click events have been</p>
+
+      <article id="section3_box_3">
+        <p id="section3_box_3_text_1">Finds all inputs</p>
+        <p id="section3_box_3_text_2">Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.</p>
+          <p id="section3_box_3_text_3">Notice there is no change when clicking the checkboxes since no click events have been</p>
       </article>
+    </div>
     </div>
   </section>
 
@@ -74,7 +100,8 @@
         <p>CENNIK</p>
       </article>
 
-      <div class="section4_figure" id="section4_figure1">
+  <div id="section4_figures">
+      <div  id="section4_figure1">
 
         <div class="figure_container">
           <div class="circles">
@@ -87,22 +114,25 @@
             BASIC PLAN
           </div>
           <div class="figure_round_div">
-            <p class="figure_round_div_price1">8599</p>
+            <p class="figure_round_div_price1">85<span>99</span></p>
             <p class="figure_round_div_price2">PLN/MSC</p>
           </div>
 
+<div class="figure_articles">
           <article class="figure_art1">Zakup towaru + dowóz</article>
           <article class="figure_art2">Serwis</article>
           <article class="figure_art3">Gwarancja 5 lat</article>
           <article class="figure_art4">Gwarancja 6 lat</article>
           <article class="figure_art5">Porady projektanta</article>
+</div>
+
           <div class="figure_button">
             DOŁĄCZ
           </div>
 
         </div>
 
-        <div class="section4_figure" id="section4_figure2">
+        <div  id="section4_figure2">
           <div class="figure_container">
             <div class="circles">
               <div class="outer-circle">
@@ -114,21 +144,25 @@
               STANDARD PLAN
             </div>
             <div class="figure_round_div">
-              <p class="figure_round_div_price1">9599</p>
+              <p class="figure_round_div_price1">95<span>99</span></p>
               <p class="figure_round_div_price2">PLN/MSC</p>
             </div>
+
+            <div class="figure_articles">
 
             <article class="figure_art1">Zakup towaru + dowóz</article>
             <article class="figure_art2">Serwis</article>
             <article class="figure_art3">Gwarancja 5 lat</article>
             <article class="figure_art4">Gwarancja 6 lat</article>
             <article class="figure_art5">Porady projektanta</article>
+</div>
+
             <div class="figure_button">
               DOŁĄCZ
             </div>
           </div>
 
-          <div class="section4_figure" id="section4_figure3">
+          <div  id="section4_figure3">
             <div class="figure_container">
               <div class="circles">
                 <div class="outer-circle">
@@ -140,21 +174,25 @@
                 ADVANCE PLAN
               </div>
               <div class="figure_round_div">
-                <p class="figure_round_div_price1">21100</p>
+                <p class="figure_round_div_price1">211<span>00</span></p>
                 <p class="figure_round_div_price2">PLN/MSC</p>
               </div>
+
+              <div class="figure_articles">
 
               <article class="figure_art1">Zakup towaru + dowóz</article>
               <article class="figure_art2">Serwis</article>
               <article class="figure_art3">Gwarancja 5 lat</article>
               <article class="figure_art4">Gwarancja 6 lat</article>
               <article class="figure_art5">Porady projektanta</article>
+</div>
               <div class="figure_button">
                 DOŁĄCZ
               </div>
             </div>
           </div>
         </div>
+      </div>
   </section>
 
   <section id="section5">
@@ -168,19 +206,20 @@
         <input type="text" name="email" placeholder="email">
         <input type="text" name="message" placeholder="Wiadomość">
       </div>
-      <div id="section5_box1">
+
+      <article id="section5_art">
         <img id="section5_box1_pic" src="./images/red_chair.png">
-      </div>
-      <article id="section5_box2">
-<div id="section5_box2_ok">
-<img id="section5_box2_ok_pic" src="./images/form_ok.jpg">
-</div>
-<p>Zgadzam się na przetwarzanie </br>
-  danych osobowych</p>
+      <article id="section5_box1">
+        <div id="section5_box1_ok">
+          <img id="section5_box2_ok_pic" src="./images/form_ok.jpg">
+        </div>
+        <p>Zgadzam się na przetwarzanie </br>
+          danych osobowych</p>
       </article>
       <div id="section5_button">
-        <span>WYŚLIJ</span>
+        <p id="section5_button_text">WYŚLIJ</p>
       </div>
+    </article>
 
     </div>
   </section>
@@ -194,7 +233,7 @@
         <img src="./images/pinterest.png">
         <img src="./images/pinterest.png">
       </div>
-      <p id="footer_p2">SIT ON CHAIR</p>
+      <p id="footer_p2">SIT <span>ON</span> CHAIR</p>
 
     </div>
   </footer>
