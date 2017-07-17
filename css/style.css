@@ -11,6 +11,7 @@
   margin: 0;
 }
 
+
 body {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
@@ -73,7 +74,8 @@ header {
 
 #section1 {
   width: 100%;
-  padding-left: 850px;
+
+
 }
 
 #section1_box {
