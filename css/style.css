@@ -24,7 +24,7 @@ body {
 
 header {
   width: 100%;
-  height: 30px;
+  height: 40px;
   background-color: black;
   font-weight: bold;
   color: white;
@@ -36,12 +36,16 @@ header {
   width: 1200px;
   padding-top: 2.5px;
   padding-left: 40px;
+  margin-top:5px;
 }
 
 #logo {
   line-height: 15px;
   font-size: 15px;
   height: 15px;
+  margin-left: 40px;
+
+
 }
 
 #logo_ON {
@@ -55,6 +59,7 @@ header {
   vertical-align: middle;
   line-height: 15px;
   height: 15px;
+  margin-top: 5px;
 }
 
 #header_nav>ul {
@@ -81,6 +86,7 @@ header {
 #section1_box {
   width: 100px;
   text-align: center;
+  margin-left: 850px;
 }
 
 #section1_box_triangle {
@@ -119,10 +125,13 @@ header {
   line-height: 16px;
 }
 
+
+
+
+
 #section2 {
-  border: 1px solid blue;
   width: 100%;
-  height: 600px;
+  height: 400px;
   background: rgba(255, 255, 255, 1);
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
@@ -133,84 +142,112 @@ header {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
 }
 
-#section2_box {
-  height: 400px;
-  width: 1200px;
-  border: 1px solid green;
-}
-
-#section2_arrow_left {
-  height: 60px;
-  width: 60px;
+#section2_arrow_left{
+  width: 80px;
+  height: 80px;
   display: inline-block;
   float: left;
+  margin-top: 140px;
+
 }
 
-#section2_arrow_left>p {
-  font-size: 60px;
-  line-height: 60px;
-  color: aquamarine;
-}
-
-#section2_pic {
-  width: 470px;
-  height: 337px;
-  display: inline-block;
-  border: 1px solid red;
-}
-
-#section2_art {
-  border: 1px solid brown;
-  width: 400px;
-  height: 300px;
-  display: inline-block;
-}
-
-#section2_art_title {
-  border: 1px solid black;
-  width: 350px;
-  height: 30px;
-  font-size: 30px;
-  line-height: 30px;
-  height: 30px;
-}
-
-#section2_green {
+#section2_arrow_left > p {
+  font-size: 80px;
+  line-height: 80px;
   color: Aquamarine;
-  border: 1px color black;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: lighter;
+
 }
 
-#section2_main_text {
-  font-size: 15px;
-  line-height: 15px;
+#section2_black_chair {
+  width: 500px;
+  height: 400px;
+  background-image: url("../images/black_chair.png");
+background-repeat: no-repeat;
+background-size: cover;
+  display: inline-block;
+}
+
+#section2_box {
+width: 420px;
+height: 300px;
+display: inline-block;
+position: absolute;
+margin-top: 70px;
+}
+
+#section2_box_title {
+  font-size: 35px;
+  line-height: 40px;
+  height: 40px;
+  width: 400px;
+  font-weight: normal;
+  margin: 0 auto;
+  text-align: center;
+
+
+}
+
+#section2_box_title > span {
+color: Aquamarine;
+font-weight: bold;
+}
+
+#section2_box_text {
   height: 100px;
-  width: 300px;
-  border: 1px solid red;
+  width: 400px;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+  color: rgb(104.104,104);
+
 }
 
-#section2_button {
-  border: 1px solid black;
-  font-size: 30px;
-  line-height: 30px;
-  height: 30px;
-  width: 300px;
+#section2_box_button {
+  height: 50px;
+  width: 250px;
+  background-color: Aquamarine;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 25px;
 }
 
-#section2_button>span {}
+#section2_box_button > p {
+  height: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
 
-#section2_arrow_right {
-  height: 60px;
-  width: 60px;
+
+#section2_arrow_right{
+  width: 80px;
+  height: 80px;
   display: inline-block;
   float: right;
-  border: 1px solid black;
+  margin-top: 140px;
+
+
 }
 
-#section2_arrow_right>p {
-  font-size: 60px;
-  line-height: 60px;
-  color: aquamarine;
+#section2_arrow_right > p {
+  font-size: 80px;
+  line-height: 80px;
+  color: Aquamarine;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: lighter;
 }
+
+
+
+
 
 #section3 {
   width: 100%;
@@ -221,6 +258,7 @@ header {
 #section3_boxes {
   height: 257px;
   width: 1055px;
+  margin: 0 auto;
 }
 
 #section3_box_1 {
@@ -324,7 +362,7 @@ header {
 
 #section4 {
   width: 100%;
-  height: 600px;
+  height: 680px;
   background-color: rgb(240, 240, 240);
   padding-top: 30px;
 }
@@ -333,6 +371,9 @@ header {
   width: 300px;
   height: 25px;
   border-bottom: 10px solid Aquamarine;
+  margin-bottom: 30px;
+  margin-left: 75px;
+
 }
 
 #section4_heading>p {
@@ -344,18 +385,18 @@ header {
 }
 
 #section4_figures {
-  width: 936px;
+  width: 1100px;
   height: 520px;
-  margin-top: 20px;
+  margin: 0 auto;
 }
 
 .figure_container {
-  width: 300px;
-  height: 450px;
+  width: 320px;
+  height: 505px;
   border: 2px solid LightGray;
   margin-top: 50px;
   display: inline-block;
-  margin-right: 5px;
+  margin-left: 30px;
   display: inline-block;
 }
 
@@ -385,10 +426,10 @@ header {
 
 .figure_headline {
   text-align: center;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 30px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   height: 30px;
   width: 300px;
 }
@@ -398,18 +439,18 @@ header {
   text-align: center;
   margin: 0 auto;
   border-radius: 100%;
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   border: 2px solid LightGray;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .figure_round_div_price1 {
-  font-size: 40px;
-  line-height: 40px;
-  height: 40px;
+  font-size: 50px;
+  line-height: 50px;
+  height: 50px;
   width: 100px;
   margin: 0 auto;
   font-weight: bold;
@@ -419,7 +460,7 @@ header {
 
 .figure_round_div_price1>span {
   font-size: 15px;
-  line-height: 40px;
+  line-height: 20px;
   vertical-align: top;
 }
 
@@ -430,22 +471,23 @@ header {
   width: 100px;
   margin: 0 auto;
   color: Silver;
+  margin-top: 7px;
 }
 
 .figure_articles {
   height: 175px;
-  width: 300px;
+  width: 320px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .figure_art1 {
   margin: 0 auto;
-  width: 300px;
-  height: 35px;
+  width: 320px;
+  height: 45px;
   font-size: 23px;
-  line-height: 40px;
+  line-height: 45px;
   text-align: center;
   background-color: rgb(232, 232, 232);
   color: DarkGray;
@@ -453,10 +495,10 @@ header {
 
 .figure_art2 {
   margin: 0 auto;
-  width: 300px;
-  height: 40px;
+  width: 320px;
+  height: 45px;
   font-size: 23px;
-  line-height: 40px;
+  line-height: 45px;
   text-align: center;
   background-color: rgb(240, 240, 240);
   color: rgb(152, 152, 152);
@@ -464,10 +506,10 @@ header {
 
 .figure_art3 {
   margin: 0 auto;
-  width: 300px;
-  height: 40px;
+  width: 320px;
+  height: 45px;
   font-size: 23px;
-  line-height: 40px;
+  line-height: 45px;
   text-align: center;
   background-color: white;
   color: DarkGray;
@@ -475,10 +517,10 @@ header {
 
 .figure_art4 {
   margin: 0 auto;
-  width: 300px;
-  height: 40;
+  width: 320px;
+  height: 45px;
   font-size: 23px;
-  line-height: 40px;
+  line-height: 45px;
   text-align: center;
   background-color: rgb(232, 232, 232);
   color: DarkGray;
@@ -486,18 +528,19 @@ header {
 
 .figure_art5 {
   margin: 0 auto;
-  width: 300px;
-  height: 35px;
+  width: 320px;
+  height: 45px;
   font-size: 23px;
-  line-height: 35px;
+  line-height: 45px;
   text-align: center;
   background-color: WhiteSmoke;
   color: rgb(152, 152, 152);
 }
 
+
 .figure_button {
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 35px;
   height: 35px;
   width: 130px;
@@ -611,6 +654,8 @@ header {
   width: 300px;
   height: 25px;
   border-bottom: 10px solid Aquamarine;
+  margin-left: 80px;
+
 }
 
 #section5_heading>p {
@@ -627,6 +672,7 @@ header {
   display: inline-block;
   float: left;
   margin-top: 40px;
+  margin-left: 80px;
 }
 
 input[name="name"] {
@@ -665,10 +711,11 @@ input[name="message"] {
 
 #section5_art {
   display: inline-block;
-  margin-left: 30px;
-  margin-top: 40px;
-  height: 400px;
-  width: 400px;
+  margin-left: 50px;
+  margin-top: 20px;
+  height: 420px;
+  width: 350px;
+
 }
 
 #section5_box1_pic {
@@ -676,12 +723,13 @@ input[name="message"] {
   width: 264px;
   display: block;
   margin: 0 auto;
+
 }
 
 #section5_box1 {
   height: 50px;
-  width: 400px;
-  margin-top: 30px;
+  width: 360px;
+  margin-top: 40px;
 }
 
 #section5_box1_ok {
@@ -689,7 +737,7 @@ input[name="message"] {
   width: 50px;
   display: inline-block;
   border: 1px solid Aquamarine;
-  margin-right: 10px;
+  margin-right: 5px;
   padding-top: 5px;
 }
 
@@ -706,18 +754,18 @@ input[name="message"] {
 }
 
 #section5_button {
-  width: 300px;
-  height: 60px;
+  width: 350px;
+  height: 70px;
   background-color: Aquamarine;
   border-radius: 10px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 #section5_button_text {
   font-size: 30px;
-  line-height: 60px;
-  height: 60px;
+  line-height: 70px;
+  height: 70px;
   width: 100px;
   text-align: center;
   color: white;
