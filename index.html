@@ -4,8 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <title>SIT ON CHAIR</title>
-  <link rel="stylesheet" href="/home/weronika/Pulpit/projekt/Sit_on_chair/css/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext" rel="stylesheet">
+  <script src="./js/script.js" type="text/javascript"></script>
+
+
 </head>
 
 <body>
@@ -13,66 +18,92 @@
 
   <header>
     <div class="wrapper">
-      <div id="header_container">
-        <span id="logo">
+      <span id="logo">
         SIT <span id="logo_ON">ON</span> CHAIR
-        </span>
-        <nav id="header_nav">
-          <ul>
-            <li>O FIRMIE</li>
-            <li>GALERIA</li>
-            <li>KONTAKT</li>
-          </ul>
-        </nav>
-      </div>
+      </span>
+
+      <nav id="header_nav">
+        <ul>
+          <li>
+            <a href="#">O FIRMIE</a>
+            <ul class="dropdown-menu">
+              <li>Aktualności</li>
+              <li>Nasz team</li>
+              <li>Historia</li>
+            </ul>
+          </li>
+
+          <li><a href="#">GALERIA</a></li>
+
+          <li><a href="#">KONTAKT</a></li>
+
+        </ul>
+      </nav>
     </div>
   </header>
 
 
-  <section id="section1">
-    <div class="wrapper">
-      <div id="section1_box">
-        <div id="section1_box_triangle"></div>
-        <nav id="section1_nav">
-          <ul>
-            <li>Aktualności</li>
-            <li>Nasz team</li>
-            <li>Historia</li>
-          </ul>
-        </nav>
-      </div>
-      <div>
-  </section>
+
 
   <section id="section2">
-    <div class="wrapper">
+    <div class="wrapper1">
 
-<div id="section2_arrow_left">
-  <p>&#60;</p>
-</div>
+      <div id="section2_arrow_left" onclick="plusDivs(-1)">
+        <p>&#60;</p>
+      </div>
 
-<div id="section2_black_chair">
-  <!--<img src="./images/black_chair.png">-->
-</div>
+      <div id="section2_black_chair">
 
-<div id="section2_box">
-<p id="section2_box_title">SIT <span>ON</span> OUR <span>CHAIR</span></p>
-<p id="section2_box_text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesudada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.</p>
-<div id="section2_box_button">
-<p>ZOBACZ WIĘCEJ</p>
-</div>
-</div>
-
-<div id="section2_arrow_right">
-  <p>&#62;</p>
-</div>
+        <img class="mySlides" src="./assets/images/black_chair.png">
+        <img class="mySlides" src="./assets/images/orange.png">
+        <img class="mySlides" src="./assets/images/red.png">
 
 
       </div>
+
+
+      <div id="section2_box">
+        <p id="section2_box_title">SIT <span>ON</span> OUR <span>CHAIR</span></p>
+        <p id="section2_box_text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesudada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.</p>
+        <div id="section2_box_button">
+          <p>ZOBACZ WIĘCEJ</p>
+        </div>
+      </div>
+
+      <div id="section2_arrow_right" onclick="plusDivs(1)">
+        <p>&#62;</p>
+      </div>
+
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {
+            slideIndex = 1
+          }
+          if (n < 1) {
+            slideIndex = x.length
+          }
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          x[slideIndex - 1].style.display = "block";
+        }
+      </script>
+
+    </div>
   </section>
 
+
   <section id="section3">
-    <div class="wrapper">
+    <div class="wrapper2">
 
       <div id="section3_boxes">
         <article id="section3_box_1">
@@ -99,7 +130,7 @@
   </section>
 
   <section id="section4">
-    <div class="wrapper">
+    <div class="wrapper3">
       <article id="section4_heading">
         <p>CENNIK</p>
       </article>
@@ -199,47 +230,53 @@
         </div>
   </section>
 
+
+
+
   <section id="section5">
-    <div class="wrapper">
+    <div class="wrapper4">
       <article id="section5_heading">
         <p>KONTAKT</p>
       </article>
 
-      <div id="section5_form">
-        <input type="text" name="name" placeholder="Imię">
-        <input type="text" name="email" placeholder="email">
-        <input type="text" name="message" placeholder="Wiadomość">
-      </div>
+      <div class="section5_container">
+        <div id="section5_form">
+          <input type="text" name="name" placeholder="Imię">
+          <input type="text" name="email" placeholder="email">
+          <input type="text" name="message" placeholder="Wiadomość">
+        </div>
 
-      <article id="section5_art">
-        <img id="section5_box1_pic" src="./images/red_chair.png">
-        <article id="section5_box1">
-          <div id="section5_box1_ok">
-            <img id="section5_box2_ok_pic" src="./images/form_ok.jpg">
+        <article id="section5_art">
+          <img id="section5_box1_pic" src="./assets/images/red_chair.png">
+          <article id="section5_box1">
+            <div id="section5_box1_ok">
+              <img id="section5_box2_ok_pic" src="./assets/images/form_ok.jpg">
+            </div>
+            <p>Zgadzam się na przetwarzanie </br>
+              danych osobowych</p>
+          </article>
+
+          <div id="section5_button">
+            <p id="section5_button_text">WYŚLIJ</p>
           </div>
-          <p>Zgadzam się na przetwarzanie </br>
-            danych osobowych</p>
         </article>
 
-        <div id="section5_button">
-          <p id="section5_button_text">WYŚLIJ</p>
-        </div>
-      </article>
-
-    </div>
+      </div>
   </section>
 
   <footer>
-    <div class="wrapper">
+    <div class="wrapper5">
       <p id="footer_p1">Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
-      <div id="footer_icons">
-        <img src="./images/flickr.png">
-        <img src="./images/vimeo.png">
-        <img src="./images/pinterest.png">
-        <img src="./images/pinterest.png">
-      </div>
-      <p id="footer_p2">SIT <span>ON</span> CHAIR</p>
+      <div class="footer_box">
+        <div id="footer_icons">
+          <img src="./images/flickr.png">
+          <img src="./images/vimeo.png">
+          <img src="./images/pinterest.png">
+          <img src="./images/pinterest.png">
+        </div>
+        <p id="footer_p2">SIT <span>ON</span> CHAIR</p>
 
+      </div>
     </div>
   </footer>
 
